@@ -1,0 +1,335 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefdfd;
+    color: #222;
+    line-height: 1.6;
+}
+
+section {
+    padding: 50px 8%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+section > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* MENU PRINCIPAL */
+header {
+    background-color: #202020;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #c5f467;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c5f467;
+}
+
+/* INICIO */
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    min-height: 400px;
+}
+
+.texto-inicio {
+    max-width: 500px;
+}
+
+.texto-inicio h1 {
+    font-size: 45px;
+}
+
+.texto-inicio h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.texto-inicio p {
+    margin-bottom: 25px;
+}
+
+.inicio img {
+    width: 45%;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    background-color: #c5f467;
+    color: #202020;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #addb4d;
+}
+
+button {
+    background-color: #202020;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* CATALOGO DE PRODUCTOS */
+.productos {
+    background-color: white;
+    text-align: center;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.producto {
+    background-color: #f8f8f8;
+    padding: 18px;
+    width: 33.33%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.producto img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin-top: 12px;
+}
+
+.descripcion {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #303d16;
+    margin: 10px 0;
+}
+
+/* CARRITO */
+.carrito {
+    background-color: #eeeeee;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #202020;
+    color: white;
+}
+
+.total-carrito {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.total-carrito p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* FORMULARIOS */
+.pago,
+.registro,
+.contacto {
+    background-color: white;
+}
+
+form {
+    max-width: 550px;
+    margin: 25px auto 0;
+    padding: 25px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+}
+
+/* RESUMEN DEL PAGO */
+.resumen-pago {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.resumen-pago h3 {
+    margin-bottom: 10px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* DATOS DE CONTACTO */
+.datos-contacto {
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-inicio h2 {
+        text-align: center;
+    }
+
+    .inicio img {
+        width: 100%;
+    }
+
+    .lista-productos {
+        flex-direction: column;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
